@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".", // Set the base directory for non-relative imports
+    "paths": {
+      "*": ["src/*"], // Redirect all module imports to the 'src' folder
+      "components/*": ["src/components/*"], // Example: Map 'components' to 'src/components'
+      "utils/*": ["src/utils/*"], // Example: Map 'utils' to 'src/utils'
+      "hooks/*": ["src/hooks/*"] // Example: Map 'hooks' to 'src/hooks'
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+   "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+   },
+   "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended", // Use recommended rules from eslint-plugin-react
+      "plugin:jsx-a11y/recommended", // Use recommended accessibility rules
+      "plugin:react-hooks/recommended" // Use recommended hooks rules
+   ],
+   "parserOptions": {
+      "ecmaFeatures": {
+         "jsx": true // Enable linting for JSX
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+   },
+   "settings": {
+      "react": {
+         "version": "detect" // Automatically detect the React version
+      }
+   },
+   "rules": {
+      // Your custom rules here
+   },
+   "plugins": [
+      "react", // Enables eslint-plugin-react
+      "jsx-a11y", // Enables eslint-plugin-jsx-a11y
+      "react-hooks" // Enables eslint-plugin-react-hooks
+   ],
+   "overrides": [{
+      "files": ["tailwind.config.js", "*.config.js"],
+      "env": {
+         "node": true
+      }
+   }]
+}
